@@ -8,6 +8,12 @@ import {
 import HStack from './HStack';
 
 
+
+const width = Dimensions.get('window').width;
+const height = Dimensions.get('window').height;
+
+
+
 const TopNav = ({}) => {
 
     return (
@@ -19,9 +25,12 @@ const TopNav = ({}) => {
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: '#F5F5F5',
+        // backgroundColor: '#F5F5F5',
+        backgroundColor: 'red',
         display: 'flex',
         alignItems: 'center',
+        height: height / 19,
+        
     },
 
 })

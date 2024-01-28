@@ -8,7 +8,11 @@ import {
 import Paper from "../components/Paper";
 import TopNav from "../components/TopNav";
 import SwiperPost from "../components/SwiperPost";
+import TopTile from "../components/topTile";
 
+
+const width = Dimensions.get('window').width;
+const height = Dimensions.get('window').height;
 
 const Home = ({ navigation }: any) => {
     const newsData = [
@@ -19,6 +23,7 @@ const Home = ({ navigation }: any) => {
     return (
         <Paper>
             <TopNav />
+            <TopTile />
             <SwiperPost navigation='navigation' newsData={newsData} />
             <Text>Home Page</Text>           
         </Paper>
