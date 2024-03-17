@@ -18,20 +18,25 @@ const TopNav = ({}) => {
 
     return (
         <HStack style={styles.container}>
-            <Text>NEWS</Text>
+            <Text style={styles.head}>Bloggy</Text>
         </HStack>
     )
 };
 
 const styles = StyleSheet.create({
     container: {
-        // backgroundColor: '#F5F5F5',
-        backgroundColor: 'red',
+        backgroundColor: '#F5F5F5',
+        // backgroundColor: 'red',
         display: 'flex',
         alignItems: 'center',
         height: height / 19,
-        
+        justifyContent: 'center',
+        borderBottomWidth: 0.2,
+        borderColor: 'gray',
     },
+    head: {
+        fontSize: 18,
+    }
 
 })
 
