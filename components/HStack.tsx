@@ -23,7 +23,7 @@ const HStack = ({ children, style }: HStackProps) => {
 const styles = StyleSheet.create({
     container: {
         display: 'flex',
-        flexDirection: 'column',
+        flexDirection: 'row',
         backgroundColor: '#FJFJFJ'
     },
 

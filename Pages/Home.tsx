@@ -27,7 +27,7 @@ const Home = ({ navigation }: any) => {
             <TopNav />
             <TopTile />
             {/* <SwiperPost navigation='navigation' newsData={newsData} /> */}
-            <Text style={{fontFamily: 'Mont-BlackItalic'}}>Home Page</Text>           
+            <Text style={{fontFamily: 'Mont-BlackItalic'}}>Home Page </Text>           
             {/* <BottomNav /> */}
         </Paper>
     )

@@ -1,4 +1,4 @@
-import React, {useState, useRef} from "react";
+import React, { useState, useRef } from "react";
 import {
     View,
     Text,
@@ -6,6 +6,7 @@ import {
     Dimensions
 } from 'react-native'
 import axios from "axios";
+import Carousel from "./Carousel";
 
 
 const width = Dimensions.get('window').width;
@@ -31,6 +32,20 @@ const TopTile = ({ }) => {
     return (
         <View>
             <Text>Hey</Text>
+
+            {/* Carousel with default props */}
+            <Carousel>
+                <View style={{ flex: 1, backgroundColor: 'red' }}>
+                    <Text>Slide 1</Text>
+                </View>
+                <View style={{ flex: 1, backgroundColor: 'green' }}>
+                    <Text>Slide 2</Text>
+                </View>
+                <View style={{ flex: 1, backgroundColor: 'blue' }}>
+                    <Text>Slide 3</Text>
+                </View>
+            </Carousel>
+
         </View>
     );
 };

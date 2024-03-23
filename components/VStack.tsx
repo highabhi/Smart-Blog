@@ -23,7 +23,7 @@ const VStack = ({ children, style }: VStackProps) => {
 const styles = StyleSheet.create({
     container: {
         display: 'flex',
-        flexDirection: 'row',
+        flexDirection: 'column',
         backgroundColor: '#FJFJFJ'
     },
 
